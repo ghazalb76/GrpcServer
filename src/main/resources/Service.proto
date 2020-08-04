@@ -1,0 +1,25 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package ir.tourismit.tit.core;
+
+message Request {
+  string ProcessID = 1;
+  string ProcessReference = 2;
+  string CallerReference = 3;
+  string ServiceID = 4;
+  string CallerInputJson = 5;
+  string PreviewsOutput = 6;
+  string TokenAA = 7;
+
+}
+message Response {
+  string ProcessReference = 1;
+  string OutputJson = 2;
+  string ResponseCode = 3;
+  string ResponseDescription = 4;
+}
+
+service Service {
+  rpc service(Request) returns (Response);
+
+}
