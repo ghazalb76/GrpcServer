@@ -1,2 +1,2 @@
 # GrpcServer
-A code which establishes grpc server and waits for clients to send their grpc requests and responses to them.
+Establish a gRPC Server and wait for clients to send their gRPC requests and response them.
